@@ -1,3 +1,4 @@
+let mapleader=","
 "bind save file to new key. The command to save a file is :update (:w)
 noremap <Leader>s :update<CR>
 
@@ -59,4 +60,3 @@ set sts=4
 "Clojure Stuff"
 let clj_highlight_buildins=1
 let clj_paren_rainbow=1
-			
