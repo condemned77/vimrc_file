@@ -59,9 +59,11 @@ set showcmd
 
 " activate incremental search, ignore upper/lower case when searching and
 " color results
+set smartcase
 set incsearch
 set ic
 set hlsearch
+set ignorecase
 
 " activate syntax highlighting
 syntax on
