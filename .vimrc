@@ -1,20 +1,30 @@
-let mapleader=","
-"bind save file to new key. The command to save a file is :update (:w)
-noremap <Leader>s :update<CR>
-
-noremap <Leader>q :exit<CR>
-
 "Vim Modus statt Vi Modus verwenden
 set nocompatible
-
-" Backspace im Einfüge-Modus erlauben
-set backspace=indent,eol,start
 
 " Erkennung des Dateityps aktivieren
 filetype plugin on
 
 " activate indenting based on file type
 filetype indent on
+
+let mapleader=","
+
+syntax enable
+set fileencoding=utf-8
+set encoding=utf-8
+set autoindent
+
+" Backspace im Einfüge-Modus erlauben
+set backspace=indent,eol,start
+
+
+"bind save file to new key. The command to save a file is :update (:w)
+noremap <Leader>s :update<CR>
+noremap <Leader>q :exit<CR>
+
+
+"enable pathogen
+execute pathogen#infect()
 
 " activate automatic Indenting
 set ai
