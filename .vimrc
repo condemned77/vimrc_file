@@ -47,6 +47,10 @@ set cursorline
 " Show line numbers
 set nu
 
+"set a visual line at 80 character limit when 80 characters are hit
+highlight ColorColumn ctermbg=magenta
+call matchadd('colorColumn', '\%81v', 100)
+
 " highlight matching parantheses
 set showmatch
 
