@@ -73,6 +73,16 @@ set sw=4
 set ts=4
 set sts=4
 
+let g:solarized_termcolor=256
+
+"" Whitespace stuff
+set nowrap
+set expandtab
+
 "Clojure Stuff"
 let clj_highlight_buildins=1
 let clj_paren_rainbow=1
+
+"Map NERDTree shortcut
+noremap <Leader>n :NERDTree<CR>
+
