@@ -69,9 +69,9 @@ set ignorecase
 syntax on
 
 " set automatic indent when Autoindent and amount of tabs to 4
-set sw=4
-set ts=4
-set sts=4
+set sw=2
+set ts=2
+set sts=2
 
 let g:solarized_termcolor=256
 
