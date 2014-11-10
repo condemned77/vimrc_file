@@ -24,6 +24,7 @@ set backspace=indent,eol,start
 "bind save file to new key. The command to save a file is :update (:w)
 noremap <Leader>s :update<CR>
 noremap <Leader>q :exit<CR>
+noremap <Leader>e :python3 %<CR>
 
 
 "enable pathogen
