@@ -1,10 +1,13 @@
 "Vim Modus statt Vi Modus verwenden
 set nocompatible
 
-" Erkennung des Dateityps aktivieren
+"set vim to 256 color schemes
+set t_Co=256
+
+"Erkennen des Dateityps aktivieren
 filetype plugin on
 
-" activate indenting based on file type
+"activate indenting based on file type
 filetype indent on
 
 let mapleader=","
@@ -14,7 +17,7 @@ set fileencoding=utf-8
 set encoding=utf-8
 set autoindent
 
-" Backspace im Einfüge-Modus erlauben
+"Backspace im Einf√ºge-Modus erlauben
 set backspace=indent,eol,start
 
 
@@ -26,7 +29,7 @@ noremap <Leader>q :exit<CR>
 "enable pathogen
 execute pathogen#infect()
 
-" activate automatic Indenting
+"activate automatic Indenting
 set ai
 
 " Smart Indenting 
@@ -86,3 +89,15 @@ let clj_paren_rainbow=1
 "Map NERDTree shortcut
 noremap <Leader>n :NERDTree<CR>
 
+"vim footer
+set statusline=%t       "tail of the filename
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
+set statusline+=%{&ff}] "file format
+set statusline+=%h      "help file flag
+set statusline+=%m      "modified flag
+set statusline+=%r      "read only flag
+set statusline+=%y      "filetype
+set statusline+=%=      "left/right separator
+set statusline+=%c,     "cursor column
+set statusline+=%l/%L   "cursor line/total lines
+set statusline+=\ %P    "percent through fil
